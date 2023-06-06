@@ -7,7 +7,6 @@ import org.approvaltests.reporters.DiffReporter;
 import org.approvaltests.reporters.UseReporter;
 import org.junit.jupiter.api.Test;
 
-import java.awt.font.NumericShaper;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -18,7 +17,7 @@ public class GildedRoseApprovalTest {
     @Test
     public void foo() {
 
-        Item[] items = new Item[]{new Item("foo", 0, 0)};
+        GildeRoseItem[] items = new GildeRoseItem[]{ GildeRoseItem.createGildeItem("foo", 0, 0)};
         GildedRose app = new GildedRose(items);
         app.updateQuality();
 
@@ -40,14 +39,14 @@ public class GildedRoseApprovalTest {
 
     @Test
     public void testAllCases() {
-        String[] names = {"Aged Brie", "Backstage passes to a TAFKAL80ETC concert", "Sulfuras, Hand of Ragnaros"};
+        String[] names = {GildeRoseItem.AGED_BRIE, GildeRoseItem.BACKSTAGE_PASSES_TO_A_TAFKAL_80_ETC_CONCERT, GildeRoseItem.SULFURAS_HAND_OF_RAGNAROS};
         Integer[] qualities = Range.get(1, 50);
         Integer[] sellins = Range.get(-1, 50);
         CombinationApprovals.verifyAllCombinations(this::updateItem, names, qualities, sellins);
     }
 
-    private Item updateItem(String name, Integer quality, Integer sellins) {
-        Item[] items = new Item[]{new Item(name, sellins, quality)};
+    private GildeRoseItem updateItem(String name, Integer quality, Integer sellins) {
+        GildeRoseItem[] items = new GildeRoseItem[]{GildeRoseItem.createGildeItem(name, sellins, quality)};
         GildedRose gr = new GildedRose(items);
         gr.updateQuality();
         return items[0];
