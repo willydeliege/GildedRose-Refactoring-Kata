@@ -1,4 +1,4 @@
-package com.gildedrose;
+package com.gildedrose.model;
 
 public class ConjuredGildeRoseItem extends GildeRoseItem {
     protected ConjuredGildeRoseItem(String name, int sellin, int quality) {

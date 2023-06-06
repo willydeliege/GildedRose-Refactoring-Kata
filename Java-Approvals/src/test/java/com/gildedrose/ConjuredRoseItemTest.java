@@ -1,5 +1,7 @@
 package com.gildedrose;
 
+import com.gildedrose.model.ConjuredGildeRoseItem;
+import com.gildedrose.model.GildeRoseItem;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package com.gildedrose;
+package com.gildedrose.model;
 
 public class BackStagePassGilleRoseItem extends GildeRoseItem {
     protected BackStagePassGilleRoseItem(String name, int sellin, int quantity) {

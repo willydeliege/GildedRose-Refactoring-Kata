@@ -1,5 +1,7 @@
 package com.gildedrose;
 
+import com.gildedrose.model.GildeRoseItem;
+
 public class Program {
 
 	public static void main(String... args) {

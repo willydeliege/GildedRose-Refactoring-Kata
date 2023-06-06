@@ -1,5 +1,7 @@
 package com.gildedrose;
 
+import com.gildedrose.model.GildeRoseItem;
+
 import java.util.Arrays;
 
 class GildedRose {

@@ -1,5 +1,6 @@
 package com.gildedrose;
 
+import com.gildedrose.model.GildeRoseItem;
 import org.approvaltests.Approvals;
 import org.approvaltests.combinations.CombinationApprovals;
 import org.approvaltests.legacycode.Range;

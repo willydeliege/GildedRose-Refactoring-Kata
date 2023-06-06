@@ -1,4 +1,4 @@
-package com.gildedrose;
+package com.gildedrose.model;
 
 class AgedBrieGildeRoseItem extends GildeRoseItem {
 
