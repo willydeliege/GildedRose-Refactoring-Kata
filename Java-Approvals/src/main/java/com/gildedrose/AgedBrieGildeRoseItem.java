@@ -1,6 +1,9 @@
 package com.gildedrose;
 
 class AgedBrieGildeRoseItem extends GildeRoseItem {
+
+    public static final int QUALITY_MAX = 50;
+
     protected AgedBrieGildeRoseItem(String name, int sellin, int quantity) {
         super(name, sellin, quantity);
     }

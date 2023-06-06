@@ -4,6 +4,7 @@ public class GildeRoseItem {
     public static final String AGED_BRIE = "Aged Brie";
     public static final String BACKSTAGE_PASSES_TO_A_TAFKAL_80_ETC_CONCERT = "Backstage passes to a TAFKAL80ETC concert";
     public static final String SULFURAS_HAND_OF_RAGNAROS = "Sulfuras, Hand of Ragnaros";
+    public static  final String CONJURED = "Conjured";
 
     private final Item item;
 
@@ -21,6 +22,8 @@ public class GildeRoseItem {
 
                 case SULFURAS_HAND_OF_RAGNAROS:
                     return new SulfuraGildeRoseItem(name,sellin,quality);
+            case CONJURED:
+                return new ConjuredGildeRoseItem(name,sellin,quality);
             default:
                 return new GildeRoseItem(name, sellin, quality);
         }
