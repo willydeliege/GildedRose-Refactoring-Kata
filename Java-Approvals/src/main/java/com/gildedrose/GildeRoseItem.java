@@ -7,7 +7,7 @@ public class GildeRoseItem {
 
     private final Item item;
 
-    public GildeRoseItem(String name, int sellin, int quality) {
+    protected GildeRoseItem(String name, int sellin, int quality) {
         this.item = new Item(name,sellin,quality);
     }
 

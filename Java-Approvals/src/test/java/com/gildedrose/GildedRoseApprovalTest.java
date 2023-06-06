@@ -46,7 +46,7 @@ public class GildedRoseApprovalTest {
     }
 
     private GildeRoseItem updateItem(String name, Integer quality, Integer sellins) {
-        GildeRoseItem[] items = new GildeRoseItem[]{GildeRoseItem.createGildeItem(name, sellins, quality)};
+        GildeRoseItem[] items = new GildeRoseItem[]{GildeRoseItem.createGildeItem(name, sellins, name.equals(GildeRoseItem.SULFURAS_HAND_OF_RAGNAROS) ? 80 : quality)};
         GildedRose gr = new GildedRose(items);
         gr.updateQuality();
         return items[0];
